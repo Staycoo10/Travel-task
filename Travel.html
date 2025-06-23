@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Travel Stay</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- ✅ Header / Navbar -->
+  <header class="bg-[#064d44] text-white px-4 py-3 flex justify-between items-center">
+    <button onclick="toggleMenu()" class="md:hidden text-2xl">☰</button>
+    <div class="text-lg font-bold"><img src="img/TravelStay_NL_inverted.png"></div>
+    <button class="bg-white text-[#064d44] px-6 py-4 rounded-full font-semibold text-sm hover:bg-gray-200 transition">Book Now</button>
+  </header>
+
+  <!-- ✅ Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="hidden bg-white text-gray-800 absolute w-64 mt-2 ml-4 rounded-xl shadow-lg z-50 p-4 space-y-2">
+    <a href="#" class="block font-semibold">Home</a>
+    <a href="#" class="block">About us</a>
+    <div>
+      <p class="font-semibold">Accommodation</p>
+      <ul class="ml-4 mt-1 text-sm space-y-1">
+        <li>Luxury Canal Suites</li>
+        <li>Eco-Friendly Retreats</li>
+        <li>Historical Stays</li>
+        <li>Modern Business Hotels</li>
+        <li>Family-Friendly Resorts</li>
+        <li>Pet-Friendly</li>
+        <li>Casino Hotels</li>
+      </ul>
+    </div>
+    <a href="#" class="block">Travel Tips</a>
+    <a href="#" class="block">Contact</a>
+  </div>
+
+  <!-- ✅ Hero Section -->
+  <section class="relative h-[600px] bg-cover bg-center flex flex-col items-center justify-center text-center px-4"
+           style="background-image: url('img/d9f58971aa8a7ed22a7ea4328f95126cfb865909.jpg');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Hero content -->
+    <div class="relative z-10 max-w-2xl">
+      <h1 class="text-3xl text-white md:text-5xl font-bold mb-4">Stay Your Way <br>in the Netherlands</h1>
+      <p class="text-sm md:text-base text-gray-200 mb-8">
+        Whether you dream of a canal-side retreat, a countryside escape, or the thrill of a luxury casino-themed hotel, we've got you covered
+      </p>
+    </div>
+
+    <div class="relative bg-black/70 z-10 mt-4 backdrop-blur-box rounded-xl border border-white text-sm px-6 py-4 flex flex-wrap justify-center gap-6 max-w-xl text-white">
+      <div class="min-w-[120px] text-center">Verified properties</div>
+      <div class="hidden sm:block border-l border-white h-5 my-auto"></div>
+      <div class="min-w-[120px] text-center">Best price guarantees</div>
+      <div class="hidden sm:block border-l border-white h-5 my-auto"></div>
+      <div class="min-w-[120px] text-center">Unique experiences</div>
+      <div class="hidden sm:block border-l border-white h-5 my-auto"></div>
+      <div class="min-w-[120px] text-center">24/7 customer support</div>
+    </div>
+  </section>
+
+  <!-- ✅ Accommodation Section -->
+ <section class="px-6 py-12 max-w-4xl mx-auto text-gray-800">
+  <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Accommodation Types</h2>
+
+  <!-- Luxury Canal Suites -->
+  <div class="mb-12">
+    <h3 class="text-xl font-semibold mb-2">Luxury Canal Suites</h3>
+    <p class="text-gray-600 mb-4">
+      Stay in the heart of Amsterdam with breathtaking views of historic canals. These luxury suites offer highly rated service, fine dining options and private terraces.
+    </p>
+    <button class="bg-[#064d44] text-white px-5 py-2 rounded-full font-semibold mb-6 hover:bg-[#043c36] transition">
+      Explore Canal Suites
+    </button>
+    <img src="img/Rectangle 1.0.png" alt="Luxury Canal" class="rounded-2xl shadow-md w-full mb-3 text-yellow-400" />
+    <ul class="flex flex-wrap text-sm text-[#064d44] gap-x-3 gap-y-2 mt-2 text-sm text-yellow-400">
+      <li>• Central locations in major cities</li>
+      <li>• Private boats</li>
+      <li>• In-room spa</li>
+      <li>• Fine art decor</li>
+    </ul>
+  </div>
+
+  <!-- Historical Stays -->
+  <div>
+    <h3 class="text-xl font-semibold mb-2">Historical Stays</h3>
+    <p class="text-gray-600 mb-4">
+      Experience the rich heritage of the Netherlands by staying in converted castles, historic canal houses, and old-world inns.
+    </p>
+    <button class="bg-[#064d44] text-white px-5 py-2 rounded-full font-semibold mb-6 hover:bg-[#043c36] transition">
+      View Historical Stays
+    </button>
+    <img src="img/Rectangle 1.1.png" alt="Historical Stays" class="rounded-2xl shadow-md w-full mb-3" />
+    <ul class="flex flex-wrap text-sm text-[#064d44] gap-x-3 gap-y-2 mt-2 text-sm text-yellow-400">
+      <li>• Unique architecture and period furnishings</li>
+      <li>• Proximity to UNESCO sites</li>
+      <li>• Guided history tours included</li>
+      <li>• Organic dining</li>
+    </ul>
+  </div>
+  <!-- Casino Hotels -->
+<div class="mt-12">
+  <h3 class="text-xl font-semibold mb-2">Casino Hotels</h3>
+  <p class="text-gray-600 mb-4">
+    Indulge in entertainment and luxury at casino hotels that combine world-class gaming, fine dining, and opulent accommodations.
+  </p>
+  <button class="bg-[#064d44] text-white px-5 py-2 rounded-full font-semibold mb-6 hover:bg-[#043c36] transition">
+    Explore Casino Hotels
+  </button>
+  <img src="img/Rectangle 1.2.png" alt="Casino Hotel" class="rounded-2xl shadow-md w-full mb-3" />
+  <ul class="flex flex-wrap text-sm text-[#064d44] gap-x-3 gap-y-2 mt-2 text-sm text-yellow-400">
+    <li>• On-site casinos and entertainment</li>
+    <li>• VIP packages</li>
+    <li>• Gourmet dining and spa services</li>
+    <li>• Organic dining</li>
+  </ul>
+</div>
+
+<div class="mt-10 text-center">
+  <button class="border border-black text-black px-6 py-2 rounded-full hover:bg-black hover:text-white transition">
+    See More
+  </button>
+</div>
+</section>
+  <!-- Trusted Section -->
+  <section class="bg-white p-8 my-10">
+    <h2 class="text-2xl font-bold text-center mb-4">Trusted by Experts, Loved by Guests</h2>
+    <p class="text-center text-gray-600 mb-6">
+      We take pride in delivering exceptional stays, recognized for excellence in
+      hospitality, sustainability, and trust. Our commitment to quality has earned us
+      prestigious awards and industry recognition, ensuring you experience nothing
+      but the best.
+    </p>
+    <div class="flex justify-around items-center flex-wrap gap-6">
+      <img src="img/eco_tourism.png" alt="Award 1" class="h-8" />
+      <img src="img/wta.png" alt="Award 2" class="h-8" />
+      <img src="/img/dha.png" alt="Award 3" class="h-8" />
+      <img src="/img/trusted_stays 1.png" alt="Award 4" class="h-8" />
+    </div>
+  </section>
+
+  <!-- Guest Testimonials -->
+  <section class="max-w-4xl mx-auto my-12 px-4">
+    <h2 class="text-2xl font-bold text-center mb-6">What Our Guests Are Saying</h2>
+    <div class="bg-blue-100 p-4 rounded-xl relative">
+      <img src="img/Rectangle 4.png" alt="Map of Netherlands" class="w-full rounded-xl" />
+        <img src="img/Emily R.png" alt="Emily" class="absolute top-10 right-18 w-30 h-30 rounded-full" />
+        <img src="img/Sophia & Mark.png" alt="Guest 1" class="absolute top-[45%] left-[30%] w-12 h-12 " />
+      <img src="img/Lucas T.png" alt="Guest 2" class="absolute top-[65%] left-[48%] w-12 h-12 " />
+      <!-- Testimonial Card -->
+      <div class="absolute bottom-8 right-6 bg-white p-4 rounded-xl shadow-md max-w-50">
+        <p class="text-gray-700 mb-2 text-sm">
+          “Staying at the Waldorf Astoria in Amsterdam was the highlight of our trip!
+          The canal views and Michelin-star dining were unforgettable.”
+        </p>
+        <div class="flex items-center text-yellow-500 mb-1">★★★★★</div>
+        <p class="font-semibold">Emily R</p>
+      </div>
+    </div>
+    <div class="text-center mt-6">
+      <button class="bg-teal-700 text-white px-6 py-2 rounded-full hover:bg-teal-800">
+        Share Your Experience
+      </button>
+    </div>
+  </section>
+
+  <!-- Travel Tips -->
+  <section class="bg-white p-8 max-w-4xl mx-auto my-12 rounded-xl shadow">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+      <div class="bg-teal-800 text-white p-6 rounded-xl text-center">
+        <h3 class="text-lg font-bold">Travel Smarter in the Netherlands</h3>
+      </div>
+      <div class="md:col-span-2 grid grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold">Best Seasons to Visit</h4>
+          <ul class="text-sm text-gray-700 mt-2 space-y-1">
+            <li><strong>Spring</strong> (April–May): tulip blooms and mild weather</li>
+            <li><strong>Summer</strong> (June–August): festivals and warm days</li>
+            <li><strong>Autumn</strong> (September–October): fewer crowds, foliage</li>
+            <li><strong>Winter</strong> (December–February): canals and markets</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold">Packing Essentials</h4>
+          <p class="text-sm text-gray-700 mt-2">
+            Comfortable shoes, rain jacket, power adapter for EU, and a reusable bottle.
+          </p>
+          <h4 class="font-bold mt-4">Getting Around</h4>
+          <p class="text-sm text-gray-700 mt-2">
+            Use OV-chipkaart for public transport or rent a bike—just follow bike rules!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="bg-teal-800 text-white p-8 max-w-4xl mx-auto my-12 rounded-xl shadow text-center">
+    <img src="img/Rectangle 5.png" alt="Luxury Interior" class="rounded-xl mx-auto mb-6" />
+    <h3 class="text-xl font-bold mb-2">Never Miss Out on Exclusive Deals!</h3>
+    <p class="mb-4">
+      Sign up for our newsletter and receive <span class="text-yellow-300">10% off your first booking</span>.
+      Stay informed about the latest offers, travel tips, and Dutch gems!
+    </p>
+    <div class="flex justify-center gap-2 max-w-md border-2 rounded-full mx-auto">
+      <input
+        type="email"
+        placeholder="Enter Email Address"
+        class="w-full px-4 py-2 rounded-full text-white"
+      />
+      <button class="w-70 m-2 py-4 bg-white text-teal-800  rounded-full font-semibold hover:bg-gray-100">
+
+Subscribe Now
+            </button>
+    </div>
+  </section>
+
+
+</body>
+</html>
