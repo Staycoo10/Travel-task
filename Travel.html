@@ -17,39 +17,58 @@
 <body class="bg-white text-gray-800">
 
 
-  <!-- ✅ Header / Navbar -->
-  <header class="bg-[#064d44] text-white px-4 py-3 flex justify-between items-center">
-    <button onclick="toggleMenu()" class="md:hidden text-2xl">☰</button>
-  
-    <div class="text-lg font-bold"><img src="assets/TravelStay_NL_inverted.png"></div>
-    <div class="hidden md:flex space-x-6 text-xl gap-16 font-semibold lexend-second">
+<!-- ✅ Header / Navbar -->
+<header class="bg-[#064d44] text-white px-4 py-3 flex justify-between items-center relative z-50">
+  <!-- Hamburger ☰ / ✕ icon -->
+  <button onclick="toggleMenu()" class="md:hidden text-2xl transition-all duration-300" id="hamburgerBtn">
+    ☰
+  </button>
+
+  <!-- Logo -->
+  <div class="text-lg font-bold">
+    <img src="assets/TravelStay_NL_inverted.png" alt="Travel Stay NL" class="h-10" />
+  </div>
+
+  <!-- Desktop Menu -->
+  <nav class="hidden md:flex space-x-6 text-xl gap-16 font-semibold lexend-second">
     <a href="index.html" class="hover:text-gray-200 transition">Home</a>
     <a href="accommodation.html" class="hover:text-gray-200 transition">Accommodation</a>
     <a href="travel-tips.html" class="hover:text-gray-200 transition">Travel Tips</a>
     <a href="contact.html" class="hover:text-gray-200 transition">Contact</a>
-    </div>
-    <button class="bg-white text-[#064d44] px-6 py-4 rounded-full font-semibold text-sm hover:bg-gray-200 transition">Book Now</button>
-  </header>
+  </nav>
 
-  <!-- ✅ Mobile Dropdown Menu -->
-  <div id="mobileMenu" class="hidden bg-white text-gray-800 absolute w-64 mt-2 ml-4 rounded-xl shadow-lg z-50 p-4 space-y-2">
-    <a href="#" class="block font-semibold">Home</a>
-    <a href="#" class="block">About us</a>
-    <div>
-      <p class="font-semibold">Accommodation</p>
-      <ul class="ml-4 mt-1 text-sm space-y-1 lexend-second">
-        <li>Luxury Canal Suites</li>
-        <li>Eco-Friendly Retreats</li>
-        <li>Historical Stays</li>
-        <li>Modern Business Hotels</li>
-        <li>Family-Friendly Resorts</li>
-        <li>Pet-Friendly</li>
-        <li>Casino Hotels</li>
-      </ul>
-    </div>
-    <a href="#" class="block" >Travel Tips</a>
-    <a href="#" class="block">Contact</a>
+
+<button class="bg-white text-[#064d44] px-6 py-4 rounded-full font-semibold text-sm hover:bg-gray-200 transition">Book Now</button>
+
+</header>
+
+<!-- ✅ Mobile Dropdown Menu -->
+<div id="mobileMenu" class="hidden md:hidden bg-white text-gray-800 absolute w-64 mt-2 ml-4 rounded-xl shadow-lg z-40 p-4 space-y-2">
+  <a href="index.html" class="block font-semibold">Home</a>
+  <a href="about.html" class="block">About us</a>
+  
+  <!-- Dropdown Section -->
+  <div>
+    <button onclick="toggleDropdown()" class=" w-full text-left flex justify-between items-center">
+  Accommodation
+  <span id="dropdownArrow" class="text-xs lexend-second">▼</span>
+</button>
+
+    <ul id="accommodationDropdown" class="ml-4 mt-1 text-sm space-y-1 hidden lexend-second">
+      <li><a href="#">Luxury Canal Suites</a></li>
+      <li><a href="#">Eco-Friendly Retreats</a></li>
+      <li><a href="#">Historical Stays</a></li>
+      <li><a href="#">Modern Business Hotels</a></li>
+      <li><a href="#">Family-Friendly Resorts</a></li>
+      <li><a href="#">Pet-Friendly</a></li>
+      <li><a href="#">Casino Hotels</a></li>
+    </ul>
   </div>
+
+  <a href="travel-tips.html" class="block lexend-second">Travel Tips</a>
+  <a href="contact.html" class="block lexend-second">Contact</a>
+  
+</div>
 
   <!-- ✅ Hero Section -->
   <section class="relative h-[600px] bg-cover bg-center flex flex-col items-center justify-between text-center px-4"
