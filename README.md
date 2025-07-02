@@ -21,5 +21,4 @@
 - **JavaScript** (pentru meniul mobil)
 - **Google Maps Embed API**
 
-## 📁 Structura proiectului
 
