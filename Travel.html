@@ -31,10 +31,10 @@
 
   <!-- Desktop Menu -->
   <nav class="hidden md:flex space-x-6 text-xl gap-16 font-semibold lexend-second">
-    <a href="index.html" class="hover:text-gray-200 transition">Home</a>
-    <a href="accommodation.html" class="hover:text-gray-200 transition">Accommodation</a>
-    <a href="travel-tips.html" class="hover:text-gray-200 transition">Travel Tips</a>
-    <a href="contact.html" class="hover:text-gray-200 transition">Contact</a>
+    <a href="#" class="hover:text-gray-200 transition">Home</a>
+    <a href="#acomodation" class="hover:text-gray-200 transition">Accommodation</a>
+    <a href="#tips" class="hover:text-gray-200 transition">Travel Tips</a>
+    <a href="#contact" class="hover:text-gray-200 transition">Contact</a>
   </nav>
 
 
@@ -49,7 +49,7 @@
   
   <!-- Dropdown Section -->
   <div>
-    <button onclick="toggleDropdown()" class=" w-full text-left flex justify-between items-center">
+    <button onclick="toggleDropdown()" class=" w-full text-left flex justify-between items-center" >
   Accommodation
   <span id="dropdownArrow" class="text-xs lexend-second">▼</span>
 </button>
@@ -100,7 +100,7 @@
 
   <!-- ✅ Accommodation Section -->
  <section class="px-6 py-12 max-w-4xl mx-auto text-gray-800">
-  <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">Accommodation Types</h2>
+  <h2 class="text-2xl md:text-3xl font-bold text-center mb-10" id="acomodation">Accommodation Types</h2>
 
   <!-- Luxury Canal Suites -->
   <div class="mb-12">
@@ -216,7 +216,7 @@
   <section class="bg-white p-8 max-w-4xl mx-auto my-12 rounded-xl shadow">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
       <div class="bg-teal-800 text-white p-6 rounded-xl text-center">
-        <h3 class="text-lg font-bold">Travel Smarter in the Netherlands</h3>
+        <h3 class="text-lg font-bold" id="tips">Travel Smarter in the Netherlands</h3>
       </div>
       <div class="md:col-span-2 grid grid-cols-2 gap-4">
         <div>
@@ -263,7 +263,7 @@ Subscribe Now
     </div>
   </section>
 
-  <footer class="bg-gray-900 text-gray-300 px-6 py-10 mt-29 pt-[64px]">
+  <footer class="bg-gray-900 text-gray-300 px-6 py-10 mt-29 pt-[64px]" id="contact">
     <img src="assets/Layer 1.png" alt="Travel Stay Netherlands" class="h-12 mb-6 justify-self-center  mb-[48px]" />
     <div class="flex justify-around">
       <!-- Left Column -->
