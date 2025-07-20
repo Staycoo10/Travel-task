@@ -1,24 +1,22 @@
-# 🌍 TravelStay Netherlands - Responsive Tourism Website
+# 🌍 TravelStay Netherlands – Responsive Tourism Website
 
-**TravelStay Netherlands** este un site web complet responsive, dedicat promovării cazărilor și experiențelor turistice în Olanda. Proiectul este creat cu HTML, Tailwind CSS și JavaScript, fiind optimizat atât pentru desktop cât și pentru dispozitive mobile.
+**TravelStay Netherlands** is a fully responsive website dedicated to promoting accommodations and travel experiences in the Netherlands. The project is built with HTML, Tailwind CSS, and JavaScript, optimized for both desktop and mobile devices.
 
-## 🔎 Funcționalități
+## 🔎 Features
 
-- Navbar responsive:
-  - Meniu complet pe ecrane mari (Home, Accommodation, Travel Tips, Contact)
-  - Meniu hamburger ☰ pe mobil
-- Pagini separate pentru fiecare secțiune (navigație între pagini)
-- Hartă Google Maps integrată pentru locații turistice
-- Design modern și aerisit, realizat cu Tailwind CSS
-- Buton de **Book Now** cu stil personalizat
-- Secțiune „Trusted by Experts” cu premii și logo-uri
-- Testimoniale cu hartă interactivă și stil adaptabil
+- Responsive Navbar:
+  - Full menu on large screens (Home, Accommodation, Travel Tips, Contact)
+  - Hamburger menu ☰ on mobile
+- Separate pages for each section (page-to-page navigation)
+- Integrated Google Maps for tourist locations
+- Modern and clean design built with Tailwind CSS
+- Custom-styled **Book Now** button
+- “Trusted by Experts” section with awards and logos
+- Testimonials with an interactive map and adaptive styling
 
-## 🛠️ Tehnologii folosite
+## 🛠️ Technologies Used
 
 - **HTML5**
 - **Tailwind CSS**
-- **JavaScript** (pentru meniul mobil)
+- **JavaScript** (for mobile menu)
 - **Google Maps Embed API**
-
-
